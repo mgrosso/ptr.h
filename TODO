@@ -1,0 +1,22 @@
+TODO:
+
+    - add the atomic test and set for more platforms; the next two platforms
+      that make sense would be macosx and solaris sparc.  Those platforms
+      work without it, but performance matters.
+
+    - add examples in test of using ptr managed objects with stl containers and
+      algorithms.  I havent found the right combination of adapter doohickies
+      to make ptr<> and foreach<> to play nicely yet; it might be necessary to
+      write some specialized versions of the usual stl adaptor functions or
+      functors to make that work.
+
+    - add an autoconf that would install the .h and .i somewhere rather than
+      requiring the developer to copy ptr files into the project. This will
+      require adding a library for the Semaphore class or else bringing it
+      inline as well.
+
+    - whatever changes necessary for ptr to conform to the boost proposed
+      standard smart_ptr and then be submitted to boost.org. I've been putting
+      this off since it seems like learning their Martian build system would
+      involve actual effort.
+

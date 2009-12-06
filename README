@@ -1,0 +1,11 @@
+ptr.h
+
+    a template based reference counting smart pointer, similar to <auto_ptr>,
+    but without the limiting exclusive ownership semantics. It uses a semaphore 
+    or, on supported platforms, a simple atomic exchange-and-add to achieve
+    thread safety without using a mutex, so it never blocks and adds only a very
+    small constant time overhead. The generous MIT license terms let you do pretty
+    much whatever you want with it as long as you dont blame me.
+
+http://sourceforge.net/projects/ptr/
+

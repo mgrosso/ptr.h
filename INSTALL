@@ -1,0 +1,12 @@
+To use ptr.h in a project other than libframe, the steps are pretty simple:
+
+    change or drop the line #include "frame_config.h"
+
+    build the test programs and make sure they work using your projects 
+    compiler and platforms.
+
+    add ptr.h, PtrSemaphore.h, and PtrSemaphore.i to a convenient include
+    directory for your project.
+
+    add PtrSemaphore.cpp or Semaphore.cpp to a convenient src directory
+    for your project.

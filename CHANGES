@@ -1,0 +1,6 @@
+Release 1.1 differs from 1.0 mainly in that the code has been cleaned up for
+readability. Other changes include better solaris portability ifdefs and the
+addition of the array operator, which just calls [] on the T*.
+
+Release 1.0 in 2003 was the first public release, however, this code was
+written in 1998, and has been in continuous production use since 1999.  
